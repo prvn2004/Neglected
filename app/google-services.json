@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "560304840393",
+    "project_id": "neglected-f4f1d",
+    "storage_bucket": "neglected-f4f1d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:560304840393:android:9900e3dd12ac0b98057718",
+        "android_client_info": {
+          "package_name": "com.project.neglected"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "560304840393-le9p4hv7gknm7lmj2l558nj9lqs4jcb6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDA2qnYZcUPF5LdU-lEZICvaqXjG1gIDVU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "560304840393-le9p4hv7gknm7lmj2l558nj9lqs4jcb6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

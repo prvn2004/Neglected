@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BlogFullViewActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <ImageButton
+                    android:id="@+id/back"
+                    android:layout_width="58dp"
+                    android:layout_height="49dp"
+                    android:layout_marginLeft="6dp"
+                    android:background="@color/white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.005"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="1.0"
+                    app:srcCompat="@drawable/ic_baseline_arrow_back_ios_24" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:id="@+id/share_story"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@color/white"
+                    android:src="@drawable/ic_baseline_share_24"
+                    android:text="Post"
+                    app:layout_constraintBottom_toBottomOf="@+id/category"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.937"
+                    app:layout_constraintStart_toEndOf="@+id/category"
+                    app:layout_constraintTop_toTopOf="@+id/category"
+                    app:layout_constraintVertical_bias="0.016" />
+
+                <TextView
+                    android:id="@+id/time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:text="23 March, 2019"
+                    android:textColor="@color/DarkGray"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/FullBlogPublisher"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toEndOf="@+id/FullBlogPublisher"
+                    app:layout_constraintTop_toBottomOf="@+id/mainTitle"
+                    app:layout_constraintVertical_bias="1.0" />
+
+                <TextView
+                    android:id="@+id/FullBlogPublisher"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="published from IITP"
+                    android:textColor="@color/DarkGray"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/mainTitle"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/mainTitle"
+                    app:layout_constraintTop_toBottomOf="@+id/mainTitle"
+                    app:layout_constraintVertical_bias="0.017" />
+
+                <TextView
+                    android:id="@+id/mainTitle"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="Don't be afraid to give up the good to go for great."
+                    android:textColor="@color/black"
+                    android:textSize="30dp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/category"
+                    app:layout_constraintTop_toBottomOf="@+id/category"
+                    app:layout_constraintVertical_bias="0.018" />
+
+                <TextView
+                    android:id="@+id/category"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:text="DESIGN"
+                    android:textColor="@color/OrangeRed"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.022" />
+
+                <ImageView
+                    android:id="@+id/BlogImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:scaleType="centerCrop"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.486"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/FullBlogPublisher"
+                    app:layout_constraintVertical_bias="0.0"
+                    app:srcCompat="@drawable/blog_back_photo" />
+
+                <TextView
+                    android:id="@+id/mainContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:text="“I am taking strict action against the minister. I am removing him from the Cabinet. We have found substantial proof of his involvement in corruption case. I do not care if the Opposition parties want to use this to hit out at us, saying a minister removed on corruption charges within two months. The point is that we will not tolerate anyone indulging in such malpractices. Our party national convenor has made it clear that corruption will not be tolerated. He had himself removed a minister in Delhi in 2015 after corruption charges were levelled against the minister,” the chief minister said in a video message.Mann claimed that Singla had admitted to wrongdoing.
+
+“I am taking strict action against the minister. I am removing him from the Cabinet. We have found substantial proof of his involvement in corruption case. I do not care if the Opposition parties want to use this to hit out at us, saying a minister removed on corruption charges within two months. The point is that we will not tolerate anyone indulging in such malpractices. Our party national convenor has made it clear that corruption will not be tolerated. He had himself removed a minister in Delhi in 2015 after corruption charges were levelled against the minister,” the chief minister said in a video message.
+Mann claimed that Singla had admitted to wrongdoing."
+                    android:textColor="@color/black"
+                    android:textSize="16dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/mainTitle"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/mainTitle"
+                    app:layout_constraintTop_toBottomOf="@+id/BlogImage"
+                    app:layout_constraintVertical_bias="0.0" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
